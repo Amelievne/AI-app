@@ -68,11 +68,15 @@ input {
 .tell-me-more {
   background-color: #ffcc70;
 }
+.submit-btn {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 #ia-inputs {
   align-items: center;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 87px 87px;
+  grid-template-rows: 87px 87px 87px;
   margin: auto;
   text-align: center;
   width: 600px;
