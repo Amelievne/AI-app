@@ -35,11 +35,22 @@ input {
 }
 
 #ia-inputs {
+  align-items: center;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 87px 87px;
   margin: auto;
   text-align: center;
-  align-items: center;
+  width: 600px;
+}
+
+#ia-response {
+  border: 1px solid #e83f6f;
+  border-radius: 23px;
+  font-size: 21px;
+  height: 103px;
+  margin: 30px auto;
+  padding: 10px;
+  text-align: center;
   width: 600px;
 }
