@@ -17,7 +17,7 @@ h1 {
   text-align: center;
   z-index: 1;
 }
-hr {
+hr.h1-title {
   background-color: #ffcc70;
   border: none;
   border-radius: 30px;
