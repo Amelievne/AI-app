@@ -75,6 +75,14 @@ input {
   grid-column-start: 1;
   grid-column-end: 3;
 }
+
+#submit {
+  transition: all 200ms ease-in-out;
+}
+#submit:hover {
+  cursor: pointer;
+  background-color: #ffcc70;
+}
 #ia-inputs {
   align-items: center;
   display: grid;
