@@ -1,8 +1,12 @@
 function generateIdea(event) {
   event.preventDefault();
-  alert("Hello");
+
   let iaResponse = document.querySelector("#ia-response");
-  iaResponse.innerHTML = "Here is an idea";
+  new Typewriter(iaResponse, {
+    strings: "Here is an idea",
+    autoStart: true,
+    delay: 40,
+  });
 }
 
 let inputsFormsElement = document.querySelector("#ia-inputs");
