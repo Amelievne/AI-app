@@ -1,9 +1,15 @@
+a {
+  text-decoration: none;
+}
 body {
   background-color: #fff6e9;
   color: #22668d;
   font-family: "Barlow Condensed", sans-serif;
 }
-
+footer {
+  font-size: 13px;
+  text-align: center;
+}
 h1 {
   font-size: 50px;
   margin: 35px auto 0px;
@@ -29,11 +35,9 @@ input {
   padding: 0 10px;
   width: 250px;
 }
-
 .form-group {
   font-size: 23px;
 }
-
 #ia-inputs {
   align-items: center;
   display: grid;
@@ -43,13 +47,12 @@ input {
   text-align: center;
   width: 600px;
 }
-
 #ia-response {
   border: 1px solid #e83f6f;
   border-radius: 23px;
   font-size: 21px;
   height: 103px;
-  margin: 30px auto;
+  margin: 30px auto 10px;
   padding: 10px;
   text-align: center;
   width: 600px;
