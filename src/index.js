@@ -1,6 +1,4 @@
 function displayIdea(response) {
-  console.log("generated");
-
   new Typewriter("#ia-response", {
     strings: response.data.answer,
     autoStart: true,
@@ -25,7 +23,19 @@ function generateIdea(event) {
     "You are a personal shopper and your mission is to give one and only one gift idea. Make sure to use the user instruction bellow to personalized the answer and to provide a short answer with only the anwser for exemple: a customized wallet from Parfois that will cost about 25euros.";
   let aiApiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${aiApiPrompt}&context=${aiApiContext}&key=${aiApiKey}`;
 
-  console.log(aiApiPrompt);
+  let responseSection = document.querySelector("#response-section");
+  responseSection.classList.remove("hidden");
+
+  let iaResponse = document.querySelector("#ia-response");
+  iaResponse.innerHTML = "Thinking ...";
+  new Typewriter("#ia-response", {
+    strings: ["Thinking ...", "Thinking ..."],
+    autoStart: true,
+    delay: 10,
+    cursor: "🎁",
+    loop: true,
+  });
+
   axios.get(aiApiUrl).then(displayIdea);
 }
 

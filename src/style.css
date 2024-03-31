@@ -19,7 +19,7 @@ h1 {
 }
 h2 {
   font-size: 30px;
-  margin: 35px auto 0px;
+  margin: 10px auto 0px;
   position: relative;
   right: 300px;
   text-align: center;
@@ -60,6 +60,9 @@ input {
   top: -24px;
   transform: rotate(-3deg);
   width: 183px;
+}
+.hidden {
+  display: none;
 }
 .idea {
   background-color: #8ecddd;
