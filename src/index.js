@@ -12,11 +12,17 @@ function generateIdea(event) {
   event.preventDefault();
 
   let whoElement = document.querySelector("#who");
+  let eventElement = document.querySelector("#event");
+  let hobbiesElement = document.querySelector("#hobbies");
+  let budgetElement = document.querySelector("#budget");
 
   let aiApiKey = "974f7528a7fe8f1a738ftd6eob928053";
-  let aiApiPrompt = `User instruction : Generate gift ideas for ${whoElement.value}`;
+  let aiApiPrompt = `User instruction : Generate gift ideas for ${whoElement.value} 
+  for the event : ${eventElement.value}. 
+  The person's hobbies are: ${hobbiesElement.value}. 
+  It must be under the price of ${budgetElement.value}`;
   let aiApiContext =
-    "You are a personal shopper and your mission is to give one and only one personalized gift idea. Make sure to use the user instruction and to provide a short answer.";
+    "You are a personal shopper and your mission is to give one and only one gift idea. Make sure to use the user instruction bellow to personalized the answer and to provide a short answer with only the anwser for exemple: a customized wallet from Parfois that will cost about 25euros.";
   let aiApiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${aiApiPrompt}&context=${aiApiContext}&key=${aiApiKey}`;
 
   console.log(aiApiPrompt);
