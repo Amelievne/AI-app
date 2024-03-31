@@ -1,10 +1,26 @@
 body {
   background-color: #fff6e9;
   color: #22668d;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 h1 {
-  font-family: "Barlow Condensed", sans-serif;
+  font-size: 50px;
+  margin: 35px auto 0px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+hr {
+  background-color: #ffcc70;
+  border: none;
+  border-radius: 30px;
+  margin: 0 auto;
+  padding: 10px 0;
+  position: relative;
+  top: -24px;
+  transform: rotate(-3deg);
+  width: 265px;
 }
 
 footer {
